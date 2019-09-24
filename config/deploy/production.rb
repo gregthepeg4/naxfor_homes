@@ -21,7 +21,12 @@
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
 
-
+role :app, %w{deploy@68.183.11.36}
+role :web, %w{deploy@68.183.11.36}
+role :db, %w{deploy@68.183.11.36}, :primary => true
+set :branch, "production"
+set :rails_env, "production"
+set :deploy_to, "/var/www/naxfor_homes_production"
 
 # Configuration
 # =============

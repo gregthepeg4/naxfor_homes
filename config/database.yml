@@ -85,6 +85,12 @@ test:
 #
 production:
   <<: *default
-  database: naxforHomes_production
-  username: naxforhomes
-  password: <%= ENV['NAXFORHOMES_DATABASE_PASSWORD'] %>
+  database: naxfor_homes_production
+  username: deploy
+  password: doajwb1949
+
+staging:
+  <<: *default
+  database: naxfor_homes_staging
+  username: deploy
+  password: doajwb1949
