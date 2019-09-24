@@ -1,4 +1,5 @@
 # config valid for current version and patch releases of Capistrano
+require 'bundler/capistrano'
 lock "~> 3.11.1"
 
 set :application, "naxforHomes"
