@@ -2,7 +2,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   # Code is not reloaded between requests.
   config.cache_classes = true
-  config.secret_key_base = ENV["STAGING_SECRET_KEY_BASE"]
+  config.require_master_key = true
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
