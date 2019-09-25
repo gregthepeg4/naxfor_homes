@@ -87,10 +87,10 @@ production:
   <<: *default
   database: naxfor_homes_production
   username: deploy
-  password: doajwb1949
+  password: <%= ENV["DATABASE_PASSWORD"] %>
 
 staging:
   <<: *default
   database: naxfor_homes_staging
   username: deploy
-  password: doajwb1949
+  password: <%= ENV["DATABASE_PASSWORD"] %>
