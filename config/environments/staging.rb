@@ -108,8 +108,8 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
-
-  config.middleware.insert_before(::Rack::Runtime, "::Rack::Auth::Basic", "Staging") do |u, p|
+#adds password protection to stagin environemt
+  config.middleware.insert_before(::Rack::Runtime, "::Rack::Auth::Basic", "staging") do |u, p|
     u == ENV["STAGING_USERNAME"] && p == ENV["STAGING_PASSWORD"]
   end
 end
