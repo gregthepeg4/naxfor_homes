@@ -1,6 +1,6 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.1"
-set :default_env, { rvm_bin_path: '~/.rvm/bin' }
+
 set :application, "naxforHomes"
 set :repo_url, "git@github.com:gregthepeg4/naxfor_homes.git"
 
